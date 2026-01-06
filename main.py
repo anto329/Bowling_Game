@@ -30,8 +30,14 @@ def bowling_game(game):
 # 1. All open frames
 print(bowling_game("9-9-9-9-9-9-9-9-9-9-"))   # 90
 # 2. All misses
-print(bowling_game("--------------------"))
+print(bowling_game("--------------------"))   #0
 #3. All Strikes
 print(bowling_game("XXXXXXXXXXXX"))         # 300
 #4. All spares (5/)
 print(bowling_game("5/5/5/5/5/5/5/5/5/5/5")) # 150
+# 5. Strike followed by open frames
+print(bowling_game("X9-9-9-9-9-9-9-9-9-"))   #  100
+# 6. Spare followed by open frames
+print(bowling_game("9/9-9-9-9-9-9-9-9-9-"))  #  100
+# 7. Mixed game
+print(bowling_game("X5/34----------------"))  #  40
