@@ -27,7 +27,11 @@ def bowling_game(game):
       index+=2
   return score
 
-
+# 1. All open frames
 print(bowling_game("9-9-9-9-9-9-9-9-9-9-"))   # 90
+# 2. All misses
+print(bowling_game("--------------------"))
+#3. All Strikes
 print(bowling_game("XXXXXXXXXXXX"))         # 300
+#4. All spares (5/)
 print(bowling_game("5/5/5/5/5/5/5/5/5/5/5")) # 150
